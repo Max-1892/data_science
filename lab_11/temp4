@@ -1,0 +1,21 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label=<Defensive Press &le; 1.5<br/>gini = 0.3615<br/>samples = 38<br/>value = [29, 9]<br/>class = Bottom Half>, fillcolor="#e58139b0"] ;
+1 [label=<Build Up &le; 1.5<br/>gini = 0.0799<br/>samples = 24<br/>value = [23, 1]<br/>class = Bottom Half>, fillcolor="#e58139f4"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<gini = 0.0<br/>samples = 17<br/>value = [17, 0]<br/>class = Bottom Half>, fillcolor="#e58139ff"] ;
+1 -> 2 ;
+3 [label=<gini = 0.2449<br/>samples = 7<br/>value = [6, 1]<br/>class = Bottom Half>, fillcolor="#e58139d4"] ;
+1 -> 3 ;
+4 [label=<Promoted &le; 0.5<br/>gini = 0.4898<br/>samples = 14<br/>value = [6, 8]<br/>class = Top Half>, fillcolor="#399de540"] ;
+0 -> 4 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+5 [label=<gini = 0.0<br/>samples = 4<br/>value = [0, 4]<br/>class = Top Half>, fillcolor="#399de5ff"] ;
+4 -> 5 ;
+6 [label=<Set Position &le; 0.5<br/>gini = 0.48<br/>samples = 10<br/>value = [6, 4]<br/>class = Bottom Half>, fillcolor="#e5813955"] ;
+4 -> 6 ;
+7 [label=<gini = 0.4444<br/>samples = 6<br/>value = [2, 4]<br/>class = Top Half>, fillcolor="#399de57f"] ;
+6 -> 7 ;
+8 [label=<gini = 0.0<br/>samples = 4<br/>value = [4, 0]<br/>class = Bottom Half>, fillcolor="#e58139ff"] ;
+6 -> 8 ;
+}
